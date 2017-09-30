@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JSON Parse</title>
+    <script type="text/javascript" src="parse.js"></script>
+  </head>
+  <h1>JSON Parse</h1>
+  <div>
+	<h2>Using JSON.parse() with strings.</h2>
+	<p>Please create a pet below:</p>
+	Pet Name: <input type="text" id="petName" value="Peetey"><br>
+	Species: <input type="text" id="species" value="canine"><br>
+	Breed: <input type="text" id="breed" value="Border Collie"><br>
+	Temperment: <input type="text" id="termperment" value="ADHD"><br>
+	<button type="button" onclick="createPetString(petName.value,species.value,breed.value,termperment.value)">Create Objects</button>
+	<br>String that represents a pet object: <pre id="area1"></pre>
+	<p>After a pet object has been created, lets parse it using JSON.parse()</p>
+	<button type="button" onclick="parsePet(petName.value,species.value,breed.value,termperment.value)">Parse object</button><br>
+	<pre id="area2"></pre>
+  </div>
+  <div>
+	<h2>Using JSON.parse() from server</h2>
+	<p>We will need to make an XMLHttpRequest to the server for this demo.</p>
+	<button type="button" onclick="requestPet()">Make Request</button><br>
+	<pre id="area3"></pre>
+  </div>
+  <h1>Stringify</h1>
+  <div>
+	<h2>Stringify changes an object into a json string to send to a server.</h2>
+	<p>Click the button below to transform the pet object you created previously into a string.</p>
+	<button type="button" onclick="stringifyPet()">Stringify You Pet</button><br>
+	<pre id="area4"></pre>
+  </div>
+
+<body>
+
+  </body>
+</html>
