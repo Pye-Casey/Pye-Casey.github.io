@@ -70,13 +70,13 @@ function requestPet() {
 	};
 	myRequest.open("GET", "pet.txt", true);
 	myRequest.send(); 
-	
+	console.log("Name: " + petObj.name();
 	// display object
 	var myLocation = document.getElementById("area3");
-	myLocation.innerHTML = "Name: " + petObj.name + "\n";
+	/*myLocation.innerHTML = "Name: " + petObj.name + "\n";
 	myLocation.innerHTML += "Species: " + petObj.species + "\n";
 	myLocation.innerHTML += "Breed: " + petObj.breed + "\n";
-	myLocation.innerHTML += "Temperment: " + petObj.temperment + "\n"; 
+	myLocation.innerHTML += "Temperment: " + petObj.temperment + "\n"; */
 }
 
 /***************************************
