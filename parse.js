@@ -70,7 +70,7 @@ function requestPet() {
 	};
 	myRequest.open("GET", "pet.txt", true);
 	myRequest.send(); 
-	console.log("Name: " + petObj.name();
+	console.log("Pet Name: " + petObj.name);
 	// display object
 	var myLocation = document.getElementById("area3");
 	myLocation.innerHTML = "Name: " + petObj.name + "\n";
