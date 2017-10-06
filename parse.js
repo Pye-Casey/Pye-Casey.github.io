@@ -60,23 +60,25 @@ function parsePet() {
 ***************************************/
 function requestPet() {
 	
-	var myRequest = new XMLHttpRequest();
-	var petObj; // parse to this object
-	// make request to server
-	myRequest.onreadystatechange = function() {
-		if (this.readyState == 4 & this.status == 200) {
-			petObj = JSON.parse(this.responseText);
-		}
-	};
-	myRequest.open("GET", "pet.txt", true);
-	myRequest.send(); 
-	console.log("Pet Name: " + petObj.name);
-	// display object
-	var myLocation = document.getElementById("area3");
-	myLocation.innerHTML = "Name: " + petObj.name + "\n";
-	myLocation.innerHTML += "Species: " + petObj.species + "\n";
-	myLocation.innerHTML += "Breed: " + petObj.breed + "\n";
-	myLocation.innerHTML += "Temperment: " + petObj.temperment + "\n"; 
+  var petObj; // parse to this object
+  var petStr; // entire string for testing
+  var fileName = "pet.txt";
+  // display object
+  var myLocation = document.getElementById("area3");
+  var xhttp = new XMLHttpRequest(); // create xmlhttprequest object
+  xhttp.onreadystatechange = function() { 
+  if (this.readyState == 4 && this.status == 200) { // readyState 4 means ready, status 200 request is ready
+      // Get object from JSON parse
+      petObj = JSON.parse(this.responseText);
+      // display to page  
+      myLocation.innerHTML = "Name: " + petObj.name + "\n";
+      myLocation.innerHTML += "Species: " + petObj.species + "\n";
+      myLocation.innerHTML += "Breed: " + petObj.breed + "\n";
+      myLocation.innerHTML += "Temperment: " + petObj.temperment + "\n";
+    }
+  };
+  xhttp.open("GET", fileName, true);
+  xhttp.send();
 }
 
 /***************************************
