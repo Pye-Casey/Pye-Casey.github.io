@@ -1,0 +1,129 @@
+div.example {
+    width: 50px;
+    height: 20px;
+    background: blue;
+    transition: width 5s; 
+}
+
+div.example:hover {
+    width: 500px;
+}
+
+h1 {
+  font-size: 40px;
+  transition: font-size 10s;
+  transition-delay: 1s;
+}
+h1:hover {
+  font-size: 50px;
+}
+
+.increment {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  transition: width 5s, height 5s;
+}
+.increment:hover {
+  width: 200px;
+  height: 100px;
+}
+
+.trigger {
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: width 10s, height 5s;
+}
+
+.triggerEnlarge {
+  width: 800px;
+  height: 100px;
+}
+
+.triggerSmall {
+  width: 20px;
+  height: 20px;
+}
+
+.animation {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  animation-name: colorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  from {background-color: blue;}
+  to {background-color: red;}
+}
+
+.animation2 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  animation-name: colorChange2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange2 {
+  0% {background-color: blue;}
+  25% {background-color: red;}
+  50% {background-color: green;}
+  75% {background-color: yellow;}
+  100% {background-color: blue;}
+}
+.animation3 {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  animation-name: colorChange3;
+  animation-duration: 30s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange3 {
+  0% {left: 0px; top: 0px;}
+  25% {left: 100px; top: 0px;}
+  50% {left: 100px; top: 20px;}
+  75% {left: 0px; top: 20px;}
+  100% {left: 0px; top: 0px;}
+}
+
+.generic {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.animation4 {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  animation-name: colorChange4;
+  animation-duration: 10s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange4 {
+  0% {left: 0px; top: 0px; background-color: blue;}
+  25% {left: 500px; top: 0px; background-color: yellow;}
+  50% {left: 500px; top: 200px;background-color: red;}
+  75% {left: 0px; top: 200px;background-color: green;}
+  100% {left: 0px; top: 0px;background-color: blue;}
+}
+
+.animation5 {
+  width: 50px;
+  height: 50px;
+  animation-name: colorChange5;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes colorChange5 {
+  100% {left: 0px; top: 0px; background-color:red;} 
+}
