@@ -1,0 +1,49 @@
+.example {
+    width: 500px;
+    height: 50px;
+    background: red;
+}
+.example2 {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+.example3 {
+    width: 100%;
+    height: 300px;
+    background: pink;
+}
+
+.trigger {
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: width 10s, height 5s;
+}
+
+.triggerEnlarge {
+  width: 800px;
+  height: 100px;
+}
+
+.triggerSmall {
+  width: 20px;
+  height: 20px;
+}
+
+.animation2 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  animation-name: colorChange2;
+  animation-duration: 5s;
+  animation-iteration-count: 10; 
+}
+@keyframes colorChange2 {
+  0% {background-color: blue;}
+  25% {background-color: red;}
+  50% {background-color: green;}
+  75% {background-color: yellow;}
+  100% {background-color: blue;}
+}

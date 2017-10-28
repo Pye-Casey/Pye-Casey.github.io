@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body onload="letsLoad()">
+  <h1>Standard JavaScript Events</h1>
+<div onload="letsLoad()">
+  <h2>Onload Event</h2>
+  <p>Events can be triggered when a page is loaded.</p>
+  <p id="p1"></p>
+</div>
+<div>
+  <h2>Onmouseover and Onmouseout Events</h2>
+  <p id="p2">Mouse over the object below to see what it does.</p>
+  <div class="example" id="mouse" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
+</div>
+<div>
+  <h2>Onclick</h2>
+  <p id="p3">Click on the element below</p>
+  <div class="example2" id="onclick" onclick="clicker()" ></div>
+  
+</div>
+<div>
+   <h2>Transition Events</h2>
+   <p>Click the buttons to start the transition events</p>
+   <button input="button" onclick="enlargeBox()">Drink Me</button>
+   <button input="button" onclick="smallBox()">Eat Me</button>
+  </br>
+  <div id="trigger" class="trigger"></div>
+  <p id="pTrans"></p>
+</div>
+<div>
+   <h2>Animation Events</h2>
+   <div class="animation2" id="animation"></div>
+   <p id="pAnimation"></p>
+</div>
+<div>
+  <h2>Touch Events</h2>
+  <p>The div element below is set up for touch events. Give it a touch!</p>
+  <div id="touch" class="example3" onload="loadTouch()" ontouchstart="startTouch()" ></div>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
