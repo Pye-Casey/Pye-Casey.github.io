@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>localStorage</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  <h1>Local Storage API, Storing and Tretrieving Simple Data, Arrays, Associative Arrays, and Objects.</h1>
+<div>
+  <h2>To use local storage we need check for localStorage.</h2>
+  <p>Click the button below to see if localStorage is supported on your browser.</p>
+  <button input="button" onclick="checkSupport()">Check Support</button>
+  <div id="div1"></div>
+</div>
+<div>
+  <h2>Adding data to local storage</h2>
+  <p>Update the information below and click the button to add it to the local storage.</p>
+  First Name:<input id="fName" value="Biblo"><br>
+  Last Name:<input id="lName" value="Baggins"><br>
+  <button input="button" onclick="saveNames()">Save Name</button><br>
+  <div id="div2"></div>
+</div>
+<div>
+  <h2>Storing Arrays</h2>
+  <p>We can store arrays as strings in local storage.  First, let us create an array of animals.</p>
+  Animal 1:<input id="animal1" value="whale"><br>
+  Animal 2:<input id="animal2" value="beaver"><br>
+  Animal 3:<input id="animal3" value="turtle"><br>
+  <button input="button" onclick="makeArray()">Create Array </button>
+  <div id="div3"></div>
+</div>
+<div>
+  <h2>Storing Objects</h2>
+  <p>We can store objects as strings in local storage.  Lets alter the cow object.</p>
+  Cow color:<input id="color" value="brown"><br>
+  Cow weight:<input id="weight" value="1600"><br>
+  Cow name:<input id="cowName" value="Bertha"><br>
+  <button input="button" onclick="makeObject()">Create Object </button>
+  <div id="div4"></div>
+  
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
