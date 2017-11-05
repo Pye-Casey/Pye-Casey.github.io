@@ -1,0 +1,44 @@
+.example {
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  background-color: red;
+  position: relative;
+  transition: font-size 5s, background-color 5s;
+}
+
+.example:hover {
+  background-color: blue;
+  font-size: 300%;
+}
+
+.example2 {
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  background-color: blue;
+  position: relative;
+  transition: transform 5s, background-color 3s, font-size 5s;
+}
+
+.example2:hover {
+  background-color: purple;
+  font-size: 200%;
+  transform: rotate(360deg);
+  
+}
+
+.example3 {
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  background-color: orange;
+  position: relative;
+  transition: transform 2s, background-color 3s, font-size 5s, width 5s;
+}
+.example3:hover {
+  background-color: purple;
+  font-size: 300%;
+  transform: skewx(20deg);
+  width: 300px;
+}
