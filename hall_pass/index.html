@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Hall Pass</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div>
+    <img src="images/menu.png" class="icon" id="menu_icon" alt="menu icon - arrow down" onclick="openNav()">
+  </div>
+  <div></div>
+  <div id="mySidenav" class="sidenav">
+	  <img src="images/history.png" class="selection" alt="history icon" >
+	  <a href="#" onclick="modalHistory()">History</a>
+	  <img src="images/late.png" class="selection" alt="late icon" id="searchImg">
+	  <a href="#" onclick="modalLate()" >Who's Late</a>
+	  <img src="images/settings.png" class="selection" alt="settings icon" id="searchImg">
+	  <a href="#" onclick="modalSettings()">Settings</a>
+	  <span id="collapse">
+	     <img src="images/arrow_up_big_white.png" class="icon" id="menu_icon" alt="menu icon - arrow down" onclick="closeNav()">
+	  </span>
+	</div>
+  <div class="content" id="content">
+    <div class="card">
+		<div class="top">
+			<img src="images/students/bob.jpg" class="student">
+			<h3></h3>
+		</div>
+		<div class="info">
+		<span>Name: Bobby James</span><br>
+		<span>Time Out: 9:30 </span><br>
+		<span>Destination: Office</span><br>
+		
+		</div>
+	</div>
+	<div class="card">
+		<div class="top">
+			<img src="images/students/sally.jpg" class="student">
+			<h3></h3>
+		</div>
+		<div class="info">
+		<span>Name: Sally Steward</span><br>
+		<span>Time Out: 9:35</span><br>
+		<span>Destination: Bath Room</span><br>
+		
+		</div>
+	</div>
+    <div class="card">
+		<div class="top">
+			<img src="images/students/sam.jpg" class="student">
+			<h3></h3>
+		</div>
+		<div class="info">
+		<span>Name: Sam Patel</span><br>
+		<span>Time Out: 9:38</span><br>
+		<span>Destination: Principal's Office</span><br>
+		
+		</div>
+	</div>
+  </div>
+  <div id="modalHistory" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearHistory()">&times;</span>
+	  <h2>Signout History</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="history" ></div>
+     </div>
+  </div>
+  <div id="modalLate" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearLate()">&times;</span>
+	  <h2>Who's Late</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="late" ></div>
+     </div>
+  </div>
+  <div id="modalSettings" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearSettings()">&times;</span>
+	  <h2>Settings</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="settings" ></div>
+     </div>
+  </div>
+  <button id="signOut" class="footer" onclick="signOut()" >
+    <h3>CLICK TO SIGN OUT</h3>
+  </button>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>

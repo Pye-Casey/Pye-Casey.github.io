@@ -1,0 +1,164 @@
+/**
+ * index.css
+ */
+
+ img.student {
+	 width: 200px;
+	 height: 200px;
+	 display: block;
+     margin: auto;
+     
+ }
+ 
+div.card {
+	box-shadow: 10px 10px 5px grey;
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	margin: 10px;
+	margin-top: 25px;
+}
+div.top {
+	background-color: #4CAF50 ;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+	vertical-align: top;
+	box-shadow: 10px 10px 5px grey;
+}
+div.info {
+    padding: 10px;
+	background-color: white;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.content {
+	 min-height:90%;
+	 width: 95%;
+	 /*background-color: #fefefe;*/
+	 margin: auto;
+ }
+ 
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	border-radius: 25px;
+}
+
+.footer {
+   /*position: fixed;*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #4CAF50;
+   color: white;
+   text-align: center;
+   height:40px;
+   cursor:pointer;
+   border-radius: 10px;
+   margin: auto;
+   position: fixed;
+   box-shadow: 10px 10px 5px grey;
+   margin-bottom: 10px;
+}
+.footer:hover {
+	background-color: #3e8e41
+}
+
+.footer:active {
+	background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+ 
+ .sidenav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	background-color: #4CAF50;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+	overflow-y: hidden;
+	margin: auto;
+}
+
+.sidenav a {
+    padding: 25px 50px 32px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1; 
+    display: inline;
+    transition: 0.3s;
+	margin: auto;
+}
+
+.sidenav a:hover {
+	font-weight: bold;
+}
+.selection {
+	filter: grayscale(100%);
+	width: 20px;
+    height: 20px;
+}
+
+.menu {
+    width: 100%;
+    height: 30px;
+    background: blue;
+    transition: height 1s; 
+}
+.icon {
+	width: 30px;
+    height: 30px;
+	display: block;
+    margin: auto;
+	padding: 0px 0;
+	cursor:pointer;
+	transform: translateY(4px);
+}
+
+.enlarge {
+	height: 100px;
+}
+
+.shrink {
+  width: 100%;
+  height: 30px;
+  transition: height 1s;
+}
+
+li {
+    display: inline;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+body {
+  background: #cccccc;
+  background-image: url("../images/fabric.png");
+}
