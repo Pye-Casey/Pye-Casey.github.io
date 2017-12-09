@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Hall Pass</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+  <style id="animationStyles"></style>
+</head>
+
+<body onload="loadCode()">
+  <div>
+    <img src="images/menu.png" class="icon" id="menu_icon" alt="menu icon - arrow down" onclick="openNav()">
+  </div>
+  <div></div>
+  <div id="mySidenav" class="sidenav">
+	  <img src="images/history.png" class="selection" alt="history icon" >
+	  <a href="#" onclick="modalHistory()">History</a>
+	  <img src="images/late.png" class="selection" alt="late icon" id="searchImg">
+	  <a href="#" onclick="modalLate()" >Who's Late</a>
+	  <img src="images/settings.png" class="selection" alt="settings icon" id="searchImg">
+	  <a href="#" onclick="modalSettings()">Settings</a>
+	  <span id="collapse">
+	     <img src="images/arrow_up_big_white.png" class="icon" id="menu_icon" alt="menu icon - arrow down" onclick="closeNav()">
+	  </span>
+	</div>
+  <div class="content" id="content">
+    
+	<div class="exitCard" id="exitCard" onclick="modalSignOut()">
+		<div class="exitCardImg" onclick="modalSignOut()">
+			<img src="images/exit.png" class="student">
+		</div>
+		<div class="exitCardInfo">
+			<p><b>&nbsp;</b></p>
+			<p><b>SIGN OUT</b></b></p>
+			<p><b>&nbsp;</b></p>
+		</div>
+	</div>
+	
+  </div>
+  
+  <div id="modalSignOut" class="modal">
+    <div class="modal-content">
+	  <div class="modalHeader">
+		Sign Out Form<span class="close" onclick="clearSignOut()">&times;</span>
+	  </div>
+		  <br>Your destination:
+		  <select id="destination" class="selectBox">
+			<option value="NULL"></option>
+			<option value="office">office</option>
+			<option value="bathroom">bath room</option>
+			<option value="classroom">class room</option>
+			<option value="other">other</option>
+		  </select>
+		  <div><br>
+			Select student:&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id="classList" class="selectBox">
+				<option value="NULL"></option>
+			</select>
+		  </div>
+		  
+		  <br><br>
+		  <button class="confirmBtn" id="btnSignOut" onclick="signOut()">Sign Out</button>
+		  <button class="cancelBtn" id="btnCancel" onclick="clearSignOut()">Cancel</button>
+	  <div id="signOut" ></div>
+     </div>
+  </div>
+  <div id="modalReturn" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearSettings()">&times;</span>
+	  <h2 id="returnHeading">Welcome Back</h2>
+	  <p id="returnInfo"></p>
+      <p>Are you sure you want to sign back in?</p>
+	  <button id="returnOk" class="confirmBtn" onclick="okReturn()" >OK</button>
+	  <button onclick="clearReturn()" class="cancelBtn" >Cancel</button>
+	  <div id="settings" ></div>
+     </div>
+  </div>
+  <div id="modalHistory" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearHistory()">&times;</span>
+	  <h2>Signout History</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="history" ></div>
+     </div>
+  </div>
+  <div id="modalLate" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearLate()">&times;</span>
+	  <h2>Who's Late</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="late" ></div>
+     </div>
+  </div>
+  <div id="modalSettings" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="clearSettings()">&times;</span>
+	  <h2>Settings</h2>
+      <p>Some text in the Modal..</p>
+	  <div id="settings" ></div>
+     </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
