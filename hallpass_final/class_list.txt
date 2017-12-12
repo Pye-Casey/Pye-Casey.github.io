@@ -1,0 +1,43 @@
+{
+	"students": [{
+			"name": "Sam Patel",
+			"imageLoc": "sam.jpg",
+			"id":10000
+		},
+		{
+			"name": "Sally Steward",
+			"imageLoc": "sally.jpg",
+			"id":10001
+		},
+		{
+			"name": "Bobby James",
+			"imageLoc": "bob.jpg",
+			"id":10002
+		},
+		{
+			"name": "Lisa Williams",
+			"imageLoc": "lisa.jpg",
+			"id":10003
+		},
+		{
+			"name": "Sadie Bell",
+			"imageLoc": "sadieBell.jpg",
+			"id":10004
+		},
+		{
+			"name": "Mike James",
+			"imageLoc": "mikeJames.jpg",
+			"id":10005
+		},
+		{
+			"name": "Wendy Lynn",
+			"imageLoc": "wendyLynn.jpg",
+			"id":10006
+		},
+		{
+			"name": "Tim Creek",
+			"imageLoc": "timCreek.jpg",
+			"id":10007
+		}
+	]
+}
