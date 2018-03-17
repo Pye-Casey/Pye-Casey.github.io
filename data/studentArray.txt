@@ -1,0 +1,35 @@
+{
+"className":"Math 023",
+"classTitle":"Remedial Math for Geniuses",
+"teacher":"Mr. Pye",
+"credits":3,
+"students":[
+  {
+    "name":"Isaac Newton",
+    "age":65,
+    "gpa":3.5,
+    "classes": [
+      "CIT 270"
+    ]
+  },
+  {
+    "name":"Pablo Picasso",
+    "age":120,
+    "gpa":1.0,
+    "classes": [
+      "CIT 371",
+      "CS 368",
+      "CS 246"
+    ]
+  },
+  {
+    "name":"Leonardo DiVinci",
+    "age":530,
+    "gpa":4.0,
+    "classes": [
+      "CIT 101",
+      "CS 168"
+    ]
+  }
+]
+}

@@ -1,0 +1,384 @@
+/**
+ * index.css
+ */
+
+h1 {
+	font-size: 200%;
+	font-family: "Impact", fantasy;
+	
+}
+.left {
+	float: left;
+	padding-left: 20px;
+	display: inline-block;
+}
+.clock {
+	float: right;
+	padding-right: 20px;
+	display: inline-block;
+	padding-top: 15px;
+	color: white;
+	font-weight: bolder;
+	font-size: 110%;
+}
+.infoHeader {
+	float: right;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 300px;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.menuIcon {
+	width: 25px;
+    height: 25px;
+	display: inline-block;
+	float: left;
+    margin: auto;
+	padding-left: 15px;
+	padding-top: 8px;
+	cursor:pointer;
+	transform: translateY(4px);
+}
+
+.topHeader {
+	width: 100%;
+	height: 50px;
+	background-color: RGB(91,155,213);
+	margin: auto;
+	
+}
+
+.logo {
+	font-weight:
+}
+
+img.student {
+	 width: 150px;
+	 height: 150px;
+	 display: block;
+     margin: auto;
+ }
+
+.close {
+	cursor:pointer;
+	text-align: right;
+	font-weight: bold;
+	float: right
+}
+
+.late {
+	background-color: red;
+}
+
+div.card {
+	box-shadow: 10px 10px 5px grey;
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	margin-top: 25px;
+	cursor:pointer;
+}
+.exitCard {
+	background-color: skyblue ;
+	width: 100%;
+	height: 180px;
+	margin-top: 25px;
+	cursor:pointer;
+	box-shadow: 0px 10px 5px grey;
+	border-radius: 5px;
+}
+.exitCard:hover {
+	color: white;
+	font-weight: bold;
+	box-shadow: 0px 10px 5px #ffffcc;
+}
+.exitCard:active {
+	border: 3px solid #1E90FF;
+	transform: translateY(4px);
+}
+
+.exitCardImg {
+	height: 150px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+    font-size: 40px;
+	vertical-align: top;
+	display: inline-block;
+}
+.exitCardInfo {
+	text-align: center;
+	font-weight:bold;
+	display: inline-block;
+	margin: auto;
+	height: 150px;
+	padding: 90px 10px;
+}
+.studentCard {
+	box-shadow: 10px 10px 5px grey;
+	background-color: #4CAF50 ;
+	width: 100%;
+	height: 180px;
+	margin-top: 25px;
+	cursor:pointer;	
+	box-shadow: 0px 10px 5px grey;
+	border-radius: 5px;
+}
+
+.studentTimer {
+	animation-name: stdAnimation;
+    animation-duration: 0s;
+	animation-fill-mode: forwards;
+	/*animation-iteration-count: infinite;*/
+}
+@keyframes stdAnimation {
+    0%   {background-color: #4CAF50;}
+    45%  {background-color: #4CAF50;}
+	50%  {background-color: yellow;}
+	80%  {background-color: yellow;}
+    100% {background-color: red;}
+}
+.studentCard:hover {
+	box-shadow: 10px 10px 10px #ffffcc;
+}
+.studentCard:active {
+	border: 3px solid #1E90FF;
+	transform: translateY(4px);
+}
+.visible {
+	visibility: visible;
+}
+.invisible {
+	visibility: hidden;
+}
+
+.cardInfo {
+	padding-left: 20px;
+	text-align: left;
+	font-weight:normal;
+	font-size: 100%;
+	display: inline-block;
+}
+
+div.top {
+	background-color: #4CAF50;
+    height: 100%;
+    padding: 10px;
+    font-size: 40px;
+	vertical-align: top;
+	box-shadow: 10px 10px 5px grey;
+	transition: background-color 30s;
+}
+div.info {
+    padding: 10px;
+	background-color: white;
+	box-shadow: 10px 10px 5px grey;
+	height: 50px;
+}
+
+.selectBox {
+	border-radius: 5px;
+	width: 200px;
+}
+.selectBox:hover {
+	box-shadow: 10px 10px 5px grey;
+}
+
+.inputNumber {
+	border-radius: 5px;
+	width: 50px;
+}
+.inputNumber:hover {
+	box-shadow: 10px 10px 5px grey;
+}
+.content { width: 100%; }
+
+ .confirmBtn {
+	 background-color: #4CAF50;
+	 color:white;
+	 border:none;
+	 padding: 5px 15px;
+	 font-size: 110%;
+	 cursor:pointer;
+	 margin: 5px 5px;
+	 border-radius: 5px;
+	 border: 2px solid #4CAF50;
+ }
+ 
+.confirmBtn:hover {
+	background-color: white;
+	color: #4CAF50;
+}
+
+.confirmBtn:active {
+  background-color: white;
+  border: 3px solid #008000;
+  color: #008000;
+  box-shadow: 0 5px #DCDCDC;
+  transform: translateY(4px);
+}
+
+ .cancelBtn {
+	 background-color: #008CBA;
+	 color:white;
+	 border:none;
+	 padding: 5px 15px;
+	 font-size: 110%;
+	 cursor:pointer;
+	 margin: 5px 5px;
+	 border-radius: 5px;
+	 border: 2px solid #008CBA;
+ }
+ 
+ .cancelBtn:hover {
+	background-color: white;
+	color: #008CBA;
+ }
+ 
+ .cancelBtn:active {
+  background-color: white;
+  border: 3px solid  #1E90FF;
+  color:  #1E90FF;
+  box-shadow: 0 5px #DCDCDC;
+  transform: translateY(4px);
+}
+ 
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalHeader {
+	background-color: #4CAF50;
+	font-weight: bold;
+	font-size: 150%;
+	padding: 10px;
+	color: white;
+	margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+	border-radius: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+	border-radius: 10px;
+}
+
+.footer {
+   /*position: fixed;*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #4CAF50;
+   color: white;
+   text-align: center;
+   height:40px;
+   cursor:pointer;
+   border-radius: 10px;
+   margin: auto;
+   position: fixed;
+   box-shadow: 10px 10px 5px grey;
+   margin-bottom: 10px;
+}
+.footer:hover {
+	background-color: #3e8e41;
+}
+
+.footer:active {
+	background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.sidenav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	background-color: #3e8e41;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5px;
+	overflow-y: hidden;
+	margin: auto;
+}
+
+.sidenav a {
+    padding: 25px 50px 32px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1; 
+    display: inline;
+    transition: 0.3s;
+	margin: auto;
+}
+
+.sidenav a:hover {
+	font-weight: bold;
+}
+.selection {
+	filter: grayscale(100%);
+	width: 20px;
+    height: 20px;
+}
+
+.menu {
+    width: 100%;
+    height: 30px;
+    background: blue;
+    transition: height 1s; 
+}
+.icon {
+	width: 30px;
+    height: 30px;
+	display: block;
+    margin: auto;
+	padding: 0px 0;
+	cursor:pointer;
+	transform: translateY(4px);
+}
+
+.enlarge {
+	height: 100px;
+}
+
+.shrink {
+  width: 100%;
+  height: 30px;
+  transition: height 1s;
+}
+
+li {
+    display: inline;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+body {
+  background: #cccccc;
+  background-image: url("../images/fabric.png");
+}
