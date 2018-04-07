@@ -154,8 +154,7 @@ function signOut() {
 	// add student to list 
 	if (isExist == false){
 		StudentsOut.push(newStudent);
-		// create student card
-		//createCard(newStudent);
+
 		assignCard(newStudent);
 	}
 	else {
@@ -202,7 +201,7 @@ function assignCard(student) {
 	var stTime = "pTime_" + callingElement;
 	var p2 = document.getElementById(stTime);
 	var myTime = hour + ":" + sMin;
-	p2.innerHTML = "<b>Time: </b>" + myTime;
+	p2.innerHTML = "<b>Time Left: </b>" + myTime;
 	// change destination on card
 	var stDestination = "pDestination_" + callingElement;
 	var p3 = document.getElementById(stDestination);
@@ -224,7 +223,11 @@ function assignCard(student) {
 	var h = today.getHours();
 	var m = today.getMinutes();
 	var newM = m + (lateTime/60); // late time
-	// adjust time 
+	//adjust for non military time
+	if (h > 12) {
+		h = h - 12;
+	}
+	// adjust time minutes
 	if (newM > 59) {
 		var newH; // new hour
 		var alteredM; // new minute
@@ -667,8 +670,10 @@ function startTime() {
 	var amPM = (h > 11) ? "PM" : "AM";
     m = checkTime(m);
     //s = checkTime(s);
+	if (h > 12) {
+		h = h - 12;
+	}
     document.getElementById('clock').innerHTML =
-    //h + ":" + m + ":" + s;
 	h + ":" + m + " " + amPM;
     var t = setTimeout(startTime, 500);
 }
